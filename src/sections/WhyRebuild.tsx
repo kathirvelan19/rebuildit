@@ -47,8 +47,6 @@ export const WhyRebuild: React.FC = () => {
 
         {/* Featured Quote Highlight Banner */}
         <div className="mb-16 max-w-4xl mx-auto relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 rounded-3xl blur-md opacity-30 group-hover:opacity-50 transition-opacity"></div>
-          
           <div className="relative p-8 sm:p-12 rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-center shadow-xl space-y-3">
             <span className="text-4xl font-serif text-blue-600 dark:text-blue-400 leading-none select-none">&ldquo;</span>
             <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-zinc-900 dark:text-white tracking-tight leading-snug">

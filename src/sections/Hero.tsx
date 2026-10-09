@@ -102,16 +102,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDownload }) => {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
               {/* Decorative Card Shadow */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl blur-xl opacity-25 dark:opacity-35 animate-pulse-subtle"></div>
-
               {/* Main Dashboard Card */}
               <div className="relative bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 sm:p-7 shadow-2xl space-y-6">
                 
                 {/* Header Mockup */}
                 <div className="flex items-center justify-between pb-4 border-b border-zinc-100 dark:border-zinc-800">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-2xl bg-blue-600/10 dark:bg-blue-600/20 text-blue-600 dark:text-blue-400 font-mono flex items-center justify-center font-black text-sm">
-                      DAY 7
+                    <div className="w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 text-blue-600 dark:text-blue-400 flex flex-col items-center justify-center shrink-0 shadow-xs">
+                      <span className="text-[9px] font-extrabold uppercase tracking-wider leading-none">DAY</span>
+                      <span className="text-base font-black leading-none mt-0.5 font-mono">7</span>
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-zinc-900 dark:text-white">Today&apos;s Commitment</h4>
@@ -149,14 +148,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDownload }) => {
                     onClick={handleToggleTask}
                     className={`p-4 rounded-2xl border transition-all duration-300 cursor-pointer flex items-start gap-3.5 ${
                       completedTask 
-                        ? 'bg-blue-50 dark:bg-blue-950/30 dark:bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/60 border-blue-500/40 text-zinc-900 dark:text-white' 
+                        ? 'bg-blue-50 dark:bg-blue-950/30 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/60 text-zinc-900 dark:text-white' 
                         : 'bg-zinc-50 dark:bg-zinc-800/60 border-zinc-200 dark:border-zinc-800 hover:border-blue-400/50'
                     }`}
                   >
                     <div className={`mt-0.5 w-5 h-5 rounded-lg flex items-center justify-center transition-colors ${
-                      completedTask ? 'bg-blue-600 text-white text-zinc-950' : 'border-2 border-zinc-300 dark:border-zinc-600'
+                      completedTask ? 'bg-blue-600 text-white' : 'border-2 border-zinc-300 dark:border-zinc-600'
                     }`}>
-                      {completedTask && <CheckCircle2 className="w-4 h-4 fill-zinc-950 text-blue-400" />}
+                      {completedTask && <CheckCircle2 className="w-4 h-4 text-white fill-blue-600" />}
                     </div>
                     <div className="flex-1">
                       <p className={`text-sm font-semibold ${completedTask ? 'line-through text-zinc-500 dark:text-zinc-400' : ''}`}>

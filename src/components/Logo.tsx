@@ -25,8 +25,6 @@ export const Logo: React.FC<LogoProps> = ({ size = 'md', showText = true, classN
     <div className={`inline-flex items-center gap-2.5 select-none ${className}`}>
       <div className={`relative ${iconSizes[size]} flex items-center justify-center`}>
         {/* Glow backdrop */}
-        <div className="absolute inset-0 bg-blue-500/20 dark:bg-blue-500/30 rounded-xl blur-md"></div>
-        
         {/* Main Logo Container */}
         <div className="relative w-full h-full bg-zinc-950 dark:bg-zinc-900 rounded-xl p-1.5 border border-zinc-800 dark:border-zinc-700/60 shadow-md flex items-center justify-center group overflow-hidden">
           {/* Accent corner light */}
